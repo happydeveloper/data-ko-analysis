@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name             = 'data-ko-analysis',
-    version          = '0.1',
+    version          = '0.2',
     description      = '데이타분석 파이썬을 이용한 예제들 ',
     long_description = open('README.md').read(),
     author           = 'duru',

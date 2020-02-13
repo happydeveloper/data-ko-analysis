@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import basic as stat 
 
 def mandelbrot( h,w, maxit=20 ):
 	y,x = np.ogrid[ -1.4:1.4:h*1j, -2:0.8:w*1j ]
@@ -15,5 +16,9 @@ def mandelbrot( h,w, maxit=20 ):
 		z[diverge] = 2                        # avoid diverging too much
 
 	return divtime
+
+a = np.arange(15).reshape(3, 5)
+stat.axes(a)
+
 plt.imshow(mandelbrot(1000,1000))
 plt.show()
