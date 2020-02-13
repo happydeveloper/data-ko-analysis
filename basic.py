@@ -1,6 +1,6 @@
 import numpy as np
 from decimal import *
-a = np.arange(15).reshape(5, 3)
+a = np.arange(8).reshape(2, 2, 2)
 
 print(a)
 print("axes(dimentsion) of a : " , np.ndim(a))

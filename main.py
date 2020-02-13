@@ -17,8 +17,14 @@ def mandelbrot( h,w, maxit=20 ):
 
 	return divtime
 
-a = np.arange(15).reshape(3, 5)
-stat.axes(a)
 
-plt.imshow(mandelbrot(1000,1000))
-plt.show()
+
+def main():
+	a = np.arange(15).reshape(3, 5)
+	stat.axes(a)
+	plt.imshow(mandelbrot(1000,1000))
+	plt.show()
+
+
+if __name__ == "__main__":
+    main()
