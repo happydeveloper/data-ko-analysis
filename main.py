@@ -22,8 +22,10 @@ def mandelbrot( h,w, maxit=20 ):
 def main():
 	a = np.arange(15).reshape(3, 5)
 	stat.axes(a)
-	plt.imshow(mandelbrot(1000,1000))
-	plt.show()
+	stat.avg(a)
+	print(stat.deviation(a))
+	#plt.imshow(mandelbrot(1000,1000))
+	#plt.show()
 
 
 if __name__ == "__main__":

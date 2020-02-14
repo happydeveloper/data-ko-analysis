@@ -1,6 +1,6 @@
 import numpy as np
 from decimal import *
-a = np.arange(8).reshape(2, 2, 2)
+a = np.arange(15).reshape(3, 5)
 
 print(a)
 print("axes(dimentsion) of a : " , np.ndim(a))
@@ -13,4 +13,13 @@ print("nparray.data : expeced : buffer location " , a.data)
 print("nparray.data : expected : a location ", memoryview(a));
 
 def axes(a):
-    return np.ndim(a);
+    return np.ndim(a)
+
+
+def avg(a):
+    return np.average(a)
+
+def deviation(a):
+    min = avg(a)
+    print("xi - min")
+    return np.array([xi-min for xi in a])
